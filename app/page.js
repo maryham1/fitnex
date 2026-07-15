@@ -154,7 +154,7 @@ export default function Home() {
           </div>
         </div>
       </header>
-
+      {/* just run build */}
       {/* our program */}
       <section className="px-4 md:px-15 lg:px-15 bg-white py-10 ">
         <div className="flex flex-col gap-10">
