@@ -101,7 +101,7 @@ export default function PopularClasses() {
             Popular Classes
           </p>
 
-          <h2 className="text-xl md:text-2xl lg:text-4xl font-bold">
+          <h2 className="text-xl md:text-2xl text-black lg:text-4xl font-bold">
             Join Our Weekly Classes
           </h2>
         </div>
@@ -112,7 +112,7 @@ export default function PopularClasses() {
           <button
             onClick={() => setPage((p) => p - 1)}
             disabled={page === 0}
-            className="bg-gray-100/50 p-3 rounded-full disabled:opacity-40"
+            className="bg-gray-100/80 text-black p-3 rounded-full disabled:opacity-40"
           >
             &larr;
           </button>
@@ -134,7 +134,9 @@ export default function PopularClasses() {
                   </div>
 
                   <div>
-                    <h4 className="text-sm font-semibold">{item.title}</h4>
+                    <h4 className="text-sm font-semibold text-black">
+                      {item.title}
+                    </h4>
 
                     <div>
                       <span className="text-xs text-gray-500">{item.days}</span>
@@ -151,7 +153,7 @@ export default function PopularClasses() {
           <button
             onClick={() => setPage((p) => p + 1)}
             disabled={page === totalPages - 1}
-            className="bg-gray-100/50 p-3 rounded-full disabled:opacity-40"
+            className="bg-gray-100/80 text-black p-3 rounded-full disabled:opacity-40"
           >
             &rarr;
           </button>

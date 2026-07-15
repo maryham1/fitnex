@@ -81,7 +81,7 @@ export default function Home() {
           alt="hero image"
           className="w-full h-screen   object-cover "
         />
-        <div className="absolute inset-0  flex flex-col md:flex-row lg:flex-row  mx-auto px-4 md:px-15 lg:px-15 py-10 mt-20 gap-10 lg:justify-between items-start md:justify-center md:items-center lg:items-center">
+        <div className="absolute inset-0  flex flex-col md:flex-row lg:flex-row  mx-auto px-4 md:px-15 lg:px-15 py-10 mt-20 gap-10 lg:justify-between justify-center items-start md:justify-center md:items-center lg:items-center">
           <div className=" flex flex-col gap-7 lg:gap-7 items-start   justify-center text-white   ">
             <p className="uppercase text-[#B7F10A] text-xs md:text-sm lg:text-sm font-semibold">
               strong body. strong mind. strong you
@@ -154,7 +154,7 @@ export default function Home() {
           </div>
         </div>
       </header>
-      {/* just run build */}
+
       {/* our program */}
       <section className="px-4 md:px-15 lg:px-15 bg-white py-10 ">
         <div className="flex flex-col gap-10">
@@ -176,7 +176,7 @@ export default function Home() {
               const Icon = program.icon;
               return (
                 <div
-                  className="bg-white shadow-md max-w-auto md:max-w-[250px] lg:max-w-[220px] mx-auto rounded-xl border border-[1px] relative border-gray-300  "
+                  className="bg-white shadow-md max-w-[300px] md:max-w-[250px] lg:max-w-[220px] mx-auto rounded-xl border border-[1px] relative border-gray-300  "
                   key={program.program_Name}
                 >
                   <Image
