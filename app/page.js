@@ -98,10 +98,10 @@ export default function Home() {
             </p>
             <div className="flex  md:flex-row lg:flex-row  gap-4">
               <button className="px-6 py-2 rounded-full bg-[#B7F10A] text-black">
-                Get Started &rarr;
+                <Link href="/join">Get Started &rarr;</Link>
               </button>
               <button className="px-6 py-2 text-center rounded-full bg-transparent border-2  border-white text-white">
-                Explore programs
+                <Link href="/programs">Explore programs</Link>
               </button>
             </div>
             <div className="flex gap-4">

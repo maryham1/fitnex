@@ -77,7 +77,7 @@ export default function Page() {
               </div>
 
               <div className="px-4 py-6">
-                <h3 className="font-bold text-md md:text-lg group-hover:text-[#729700] transition">
+                <h3 className="font-bold text-md md:text-lg text-black group-hover:text-[#729700] transition">
                   {trainer.name}
                 </h3>
 
