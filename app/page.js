@@ -197,10 +197,10 @@ export default function Home() {
                     </p>
                     <button className="">
                       <Link
-                        href=""
+                        href="/programs"
                         className="text-[#729700] font-semibold text-sm "
                       >
-                        <Link href="/programs">Learn more &rarr; </Link>
+                        Learn more &rarr;
                       </Link>
                     </button>
                   </div>

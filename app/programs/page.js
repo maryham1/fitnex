@@ -99,7 +99,7 @@ export default function Page() {
             Our Programs
           </p>
 
-          <h1 className="text-xl md:text-2xl text-4xl font-bold">
+          <h1 className="text-xl md:text-2xl text-black text-4xl font-bold">
             Programs Designed for Results
           </h1>
 
@@ -118,7 +118,7 @@ export default function Page() {
               <Image
                 src={program.image}
                 alt={program.title}
-                placeholder="blur"
+                // placeholder="blur"
                 width={500}
                 height={300}
                 className="h-52 w-full object-cover"
@@ -152,32 +152,44 @@ export default function Page() {
                   <div className="overflow-hidden">
                     <div className="space-y-3 border-t pt-5">
                       <p>
-                        <span className="font-semibold">Duration:</span>{" "}
+                        <span className="font-semibold text-black">
+                          Duration:
+                        </span>{" "}
                         {program.duration}
                       </p>
 
                       <p>
-                        <span className="font-semibold">Difficulty:</span>{" "}
+                        <span className="font-semibold text-black">
+                          Difficulty:
+                        </span>{" "}
                         {program.difficulty}
                       </p>
 
                       <p>
-                        <span className="font-semibold">Sessions:</span>{" "}
+                        <span className="font-semibold text-black">
+                          Sessions:
+                        </span>{" "}
                         {program.sessions}
                       </p>
 
                       <p>
-                        <span className="font-semibold">Trainer:</span>{" "}
+                        <span className="font-semibold text-black">
+                          Trainer:
+                        </span>{" "}
                         {program.trainer}
                       </p>
 
                       <p>
-                        <span className="font-semibold">Equipment:</span>{" "}
+                        <span className="font-semibold text-black">
+                          Equipment:
+                        </span>{" "}
                         {program.equipment}
                       </p>
 
                       <p>
-                        <span className="font-semibold">Results:</span>{" "}
+                        <span className="font-semibold text-black">
+                          Results:
+                        </span>{" "}
                         {program.results}
                       </p>
 
