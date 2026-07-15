@@ -200,7 +200,7 @@ export default function Home() {
                         href=""
                         className="text-[#729700] font-semibold text-sm "
                       >
-                        Learn more &rarr;{" "}
+                        <Link href="/programs">Learn more &rarr; </Link>
                       </Link>
                     </button>
                   </div>

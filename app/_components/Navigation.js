@@ -164,7 +164,7 @@ function Navigation() {
           </ul>
 
           <button className="mt-8 w-full rounded-md bg-[#B7F10A] py-3 font-semibold text-black hover:bg-[#A3DC08] transition">
-            Join Now
+            <Link href="/join">Join Now</Link>
           </button>
         </div>
       </div>

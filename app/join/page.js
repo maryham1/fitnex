@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Contact",
+  title: "join",
 };
 function Page() {
   return (
