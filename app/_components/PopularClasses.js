@@ -116,7 +116,7 @@ export default function PopularClasses() {
           >
             &larr;
           </button>
-
+          {/* card */}
           <div
             key={page}
             className="flex flex-col lg:flex-row justify-center items-center mx-auto md:flex-row flex-wrap gap-8 animate-slide"
