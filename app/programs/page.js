@@ -151,42 +151,42 @@ export default function Page() {
                 >
                   <div className="overflow-hidden">
                     <div className="space-y-3 border-t pt-5">
-                      <p>
+                      <p className="text-black">
                         <span className="font-semibold text-black">
                           Duration:
                         </span>{" "}
                         {program.duration}
                       </p>
 
-                      <p>
+                      <p className="text-black">
                         <span className="font-semibold text-black">
                           Difficulty:
                         </span>{" "}
                         {program.difficulty}
                       </p>
 
-                      <p>
+                      <p className="text-black">
                         <span className="font-semibold text-black">
                           Sessions:
                         </span>{" "}
                         {program.sessions}
                       </p>
 
-                      <p>
+                      <p className="text-black">
                         <span className="font-semibold text-black">
                           Trainer:
                         </span>{" "}
                         {program.trainer}
                       </p>
 
-                      <p>
+                      <p className="text-black">
                         <span className="font-semibold text-black">
                           Equipment:
                         </span>{" "}
                         {program.equipment}
                       </p>
 
-                      <p>
+                      <p className="text-black">
                         <span className="font-semibold text-black">
                           Results:
                         </span>{" "}
