@@ -37,7 +37,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/codey_sis"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-colors hover:text-[#B7F10A]"
@@ -46,7 +46,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://x.com"
+                href="https://x.com/Codey_sis"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-colors hover:text-[#B7F10A]"
@@ -139,7 +139,7 @@ export default function Footer() {
                 <FiMapPin className="mt-1 text-[#B7F10A]" />
 
                 <a
-                  href="https://maps.google.com/?q=123+Fitness+Street+Lagos+Nigeria"
+                  href=""
                   target="_blank"
                   rel="noopener noreferrer"
                   className="transition hover:text-[#B7F10A]"
@@ -152,7 +152,7 @@ export default function Footer() {
                 <FiPhone className="text-[#B7F10A]" />
 
                 <a
-                  href="tel:+2348012345678"
+                  href="tel:+9045808495"
                   className="transition hover:text-[#B7F10A]"
                 >
                   +234 801 234 5678
@@ -163,7 +163,7 @@ export default function Footer() {
                 <FiMail className="text-[#B7F10A]" />
 
                 <a
-                  href="mailto:info@fitnex.com"
+                  href="mailto:codeysis.1@gmail.com"
                   className="transition hover:text-[#B7F10A]"
                 >
                   info@fitnex.com

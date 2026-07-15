@@ -4,11 +4,12 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "@/public/fitness-logo.png";
-
+import { usePathname } from "next/navigation";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 
 function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <nav className="fixed top-0 left-0 z-100 w-full bg-black border-b border-[#636462]">
@@ -24,34 +25,88 @@ function Navigation() {
 
         {/* Desktop Navigation */}
         <ul className="hidden lg:flex items-center gap-10 text-white">
-          <li className="hover:text-[#A3DC08] hover:underline hover:underline-offset-8 transition-all duration-500">
-            <Link href="/">Home</Link>
+          <li>
+            <Link
+              href="/"
+              className={`transition-all duration-500 hover:text-[#A3DC08] hover:underline hover:underline-offset-8 ${
+                pathname === "/"
+                  ? "text-[#A3DC08] underline underline-offset-8"
+                  : "text-white"
+              }`}
+            >
+              Home
+            </Link>
           </li>
 
-          <li className="hover:text-[#A3DC08] hover:underline hover:underline-offset-8 transition-all duration-500">
-            <Link href="/about">About</Link>
+          <li>
+            <Link
+              href="/about"
+              className={`transition-all duration-500 hover:text-[#A3DC08] hover:underline hover:underline-offset-8 ${
+                pathname === "/about"
+                  ? "text-[#A3DC08] underline underline-offset-8"
+                  : "text-white"
+              }`}
+            >
+              About
+            </Link>
           </li>
 
-          <li className="hover:text-[#A3DC08] hover:underline hover:underline-offset-8 transition-all duration-500">
-            <Link href="/programs">Programs</Link>
+          <li>
+            <Link
+              href="/programs"
+              className={`transition-all duration-500 hover:text-[#A3DC08] hover:underline hover:underline-offset-8 ${
+                pathname === "/programs"
+                  ? "text-[#A3DC08] underline underline-offset-8"
+                  : "text-white"
+              }`}
+            >
+              Programs
+            </Link>
           </li>
 
-          <li className="hover:text-[#A3DC08] hover:underline hover:underline-offset-8 transition-all duration-500">
-            <Link href="/trainers">Trainers</Link>
+          <li>
+            <Link
+              href="/trainers"
+              className={`transition-all duration-500 hover:text-[#A3DC08] hover:underline hover:underline-offset-8 ${
+                pathname === "/trainers"
+                  ? "text-[#A3DC08] underline underline-offset-8"
+                  : "text-white"
+              }`}
+            >
+              Trainers
+            </Link>
           </li>
 
-          <li className="hover:text-[#A3DC08] hover:underline hover:underline-offset-8 transition-all duration-500">
-            <Link href="/nutrition">Nutrition</Link>
+          <li>
+            <Link
+              href="/nutrition"
+              className={`transition-all duration-500 hover:text-[#A3DC08] hover:underline hover:underline-offset-8 ${
+                pathname === "/nutrition"
+                  ? "text-[#A3DC08] underline underline-offset-8"
+                  : "text-white"
+              }`}
+            >
+              Nutrition
+            </Link>
           </li>
 
-          <li className="hover:text-[#A3DC08] hover:underline hover:underline-offset-8 transition-all duration-500">
-            <Link href="/contact">Contact</Link>
+          <li>
+            <Link
+              href="/contact"
+              className={`transition-all duration-500 hover:text-[#A3DC08] hover:underline hover:underline-offset-8 ${
+                pathname === "/contact"
+                  ? "text-[#A3DC08] underline underline-offset-8"
+                  : "text-white"
+              }`}
+            >
+              Contact
+            </Link>
           </li>
         </ul>
 
         {/* Desktop Button */}
         <button className="hidden lg:block bg-[#B7F10A] text-black font-semibold px-4 py-2 rounded-md hover:bg-[#A3DC08] transition-all duration-500">
-          Join Now
+          <Link href="/join">Join Now</Link>
         </button>
 
         {/* Mobile Hamburger */}

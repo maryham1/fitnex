@@ -176,14 +176,14 @@ export default function Home() {
               const Icon = program.icon;
               return (
                 <div
-                  className="bg-white shadow-md max-w-[300px] md:max-w-[250px] lg:max-w-[220px] mx-auto rounded-xl border border-[1px] relative border-gray-300  "
+                  className="bg-white shadow-md max-w-[300px] md:max-w-[250px] lg:max-w-[220px] mx-auto rounded-xl border border-[1px] relative border-gray-300 transition-all duration-300 overflow-hidden group "
                   key={program.program_Name}
                 >
                   <Image
                     src={program.image}
                     alt="no image"
                     placeholder="blur"
-                    className="h-[150px] object-cover rounded-b-none rounded-xl"
+                    className="h-[150px] object-cover rounded-b-none rounded-xl group-hover:scale-110 transition duration-500"
                   />
                   <div className="absolute top-[130px] left-6 w-8 h-8 rounded-full bg-black flex items-center justify-center">
                     <Icon className="text-[#B7F10A] text-md" />
@@ -240,7 +240,7 @@ export default function Home() {
       </section>
 
       {/* about section */}
-      <AboutHero />
+      <AboutHero showButton={true} />
       {/* popular class */}
       <PopularClasses />
     </>
